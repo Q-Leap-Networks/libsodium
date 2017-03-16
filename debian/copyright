@@ -106,7 +106,8 @@ License: MIT
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Files: debian/*
-Copyright: 2014- Laszlo Boszormenyi (GCS) <gcs@debian.org>,
+Copyright: 2017- Goswin von Brederlow <brederlo@q-leap.de>
+ 2014- Laszlo Boszormenyi (GCS) <gcs@debian.org>,
  2013-2014 Raúl Sánchez Siles <rasasi78@gmail.com>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify

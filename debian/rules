@@ -4,6 +4,16 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+include /usr/share/dpkg/buildflags.mk
+include /usr/share/dpkg/pkg-info.mk
+
+DEBVENDOR  := $(shell dpkg-vendor --query Vendor)
+
+ifeq ($(DEBVENDOR), Qlustar)
+    # Qlustar specific stuff
+    include /usr/share/ql-deb-utils/Makefile
+endif
+
 override_dh_strip:
 	dh_strip --dbg-package=libsodium-dbg
 
